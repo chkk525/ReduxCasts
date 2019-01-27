@@ -14,13 +14,14 @@
 </template>
 
 <script>
-
+import faker from 'faker'
 export default {
   name: "CommentDetail",
   data() {
     return {
-    };
+      avatar:faker.image.avatar()
+    }
   },
-  props: ['author','timeAgo','content','avatar']
+  props: ['author','timeAgo','content']
 };
 </script>

@@ -1,7 +1,9 @@
 <template>
   <div id="app">
     <div class="ui container comments">
-      <CommentDetail author="Jane" timeAgo="Yesterday" content="Great to meet you" :avatar="faker.image.avatar()"/>
+      <ApprovalCard>
+        <CommentDetail author="Jane" timeAgo="Yesterday" content="Great to meet you" />
+      </ApprovalCard>
       <CommentDetail author="Kim" timeAgo="Some day" content="Fly to the moon" />
       <CommentDetail author="Kazu" timeAgo="Dragon" />
     </div>
@@ -10,18 +12,16 @@
 
 <script>
 import CommentDetail from './components/CommentDetail'
-import faker from 'faker'
+import ApprovalCard from './components/ApprovalCard'
 
 export default {
   name: 'app',
   components: {
-    CommentDetail,
+    CommentDetail,ApprovalCard
   },
   data(){
-    return {
-      avatar:faker.image.avatar()
-    }
-  }
+    return {}
+  },
 }
 </script>
 
