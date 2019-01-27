@@ -7,6 +7,10 @@ const App = () => {
     return (
         <div className={"ui container comments"}>
             <ApproveCard>
+                <h4>Are you sure?</h4>
+                This cannot be undone.
+            </ApproveCard>
+            <ApproveCard>
                 <CommentDetail author={"Sam"} timeAgo={"Today at 5:00pm"} content={"Nice blog post"}/>
             </ApproveCard>
             <ApproveCard>

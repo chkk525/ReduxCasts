@@ -1,6 +1,6 @@
 <template>
     <div class="ui card">
-        <div class="content">Are you sure?</div>
+        <div class="content"><slot></slot></div>
         <div class="extra content">
             <div class="ui tw buttons">
                 <div class="ui basic green button">Approve</div>
